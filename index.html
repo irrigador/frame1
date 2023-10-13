@@ -11,7 +11,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    font-family: 'Arial', sans-serif; /* Você pode substituir por uma fonte mais moderna se desejar */
+    font-family: 'Arial', sans-serif;
     background-color: #121212;
 }
 
@@ -41,7 +41,7 @@ video {
 }
 
 h1 {
-    color: #00FFA3; /* Cor futurista */
+    color: #00FFA3;
     margin-bottom: 20px;
     font-size: 5.5em;
     text-shadow: 2px 2px 4px rgba(0, 255, 163, 0.7);
@@ -52,6 +52,12 @@ p1 {
     margin-bottom: 20px;
     font-size: 1.2em;
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 button {
@@ -65,13 +71,14 @@ button {
     transition: transform 0.2s, box-shadow 0.2s;
     margin: 10px;
     box-shadow: 0 0 10px rgba(0, 255, 163, 0.7);
+    width: 120px;
+    text-align: center;
 }
 
 button:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(0, 255, 163, 0.9);
 }
-
     </style>
 </head>
 <body>
@@ -82,26 +89,28 @@ button:hover {
         </video>
         <div class="overlay">
             <h1>Nesis</h1>
-		<p1>O planeta terra é uma extenssão enorme e alienigenas invadiram o planeta</p1>
-            <button id="iniciarBtn">Brasil </button>
-		<button id="iniciarBtn1">Africa   </button>
-<button id="iniciarBtn2">EUA</button>
+            <p1>O planeta terra é uma extenssão enorme e alienigenas invadiram o planeta</p1>
+            <div class="button-container">
+                <button id="iniciarBtn">Brasil</button>
+                <button id="iniciarBtn1">África</button>
+                <button id="iniciarBtn2">EUA</button>
+            </div>
         </div>
     </div>
     <script>
         document.getElementById('iniciarBtn').addEventListener('click', function() {
-            window.location.href = 'https://tela2.vercel.app/'; // Substitua 'sua_outra_pagina.html' pelo nome real da sua página de destino
+            window.location.href = 'https://tela2.vercel.app/';
         });
-document.getElementById('iniciarBtn1').addEventListener('click', function() {
-            window.location.href = 'https://frame2-mauve.vercel.app/'; // Substitua 'sua_outra_pagina.html' pelo nome real da sua página de destino
+        document.getElementById('iniciarBtn1').addEventListener('click', function() {
+            window.location.href = 'https://frame2-mauve.vercel.app/';
         });
-document.getElementById('iniciarBtn2').addEventListener('click', function() {
-            window.location.href = 'https://telaeua.vercel.app/'; // Substitua 'sua_outra_pagina.html' pelo nome real da sua página de destino
+        document.getElementById('iniciarBtn2').addEventListener('click', function() {
+            window.location.href = 'https://telaeua.vercel.app/';
         });
 
-    document.addEventListener('contextmenu', function(e) {
-        e.preventDefault();
-    });
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
     </script>
 </body>
 </html>
